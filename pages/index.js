@@ -28,7 +28,7 @@ export default function Home() {
 
   useEffect(async () => {
 
-    signIn()
+    //signIn()
 
   }, [])
 
@@ -145,72 +145,16 @@ export default function Home() {
 
         
 
-        <div className="w-full" id="about">
- {/* block 1 */}
-          <div className="flex flex-row flex-wrap justify-center" id="block1" >
-            <div className="flex flex-col lg:w-1/3 items-center  py-10 space-y-7  ">
-            <img src="images/img1.gif"width="350" class="   drop-shadow-2xl "/>
-            </div>
-
-
-  {/* block 2 */}
-            <div className="flex w-full lg:w-1/3 py-10 items-top">
-              <div className="AmikoRegular space-y-4">
-              <ul class="list-disc text-2xl text-black p-2   AmikoRegular">
-                <li>4269 BIZARRE PUNKS IN RANDOM COLORS FROM THE RGB RANGE  </li>
-                <li>THE 69 SPECIAL PUNKS ARE EVENLY DISTRIBUTED AMONG THE TOTAL NUMBER. </li>
-                  <li>AFTER THE REVEAL EVERYONE WHO <span class="underline">MINTED</span> A SPECIAL WILL GET 0.256 ETH TO THEIR ACCOUNT</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="flex w-full lg:w-1/3 py-10 items-top">
-              <div className="AmikoRegular space-y-4">
-              <ul class="list-disc text-2xl text-black p-2   AmikoRegular">
-                <li>FIRST 420 ARE FREE 1 PER WALLET</li>
-                <li>REST ARE 0.0142069 ETH EACH MAX 25 PER TX</li>
-                <li>REVEAL IS AFTER SOLD OUT OR IN 24 HOURS</li>
-                <li>A LIST OF LUCKY WINNERS AND A REPORT WITH TRANSACTIONS IN A FEW HOURS AFTER THE REVEAL</li>
-              </ul>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
+        
  {/* block 3         */}
         <div id="block2" className='w-full'>
           <div className='flex flex-col items-center justify-center  w-auto'>
  
-            <span className="flex Kanit-Black text-4xl text-black">MINTED:&nbsp;<span className=" text-4xl"> {!signedIn ? <>-</> : <>{totalSupply}</>} / 4269</span></span>
-            <div className="flex justify-around  mt-8 mx-6">
-              <span className="flex Kanit-Black text-xl md:text-3xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">Mint</span>
-
-              <input type="number" min="1" max="25" value={how_many_rgbpunks} onChange={e => set_how_many_rgbpunks(e.target.value)} name=""
-                className="Kanit-Black pl-4  inline bg-grey-lighter  py-2 font-normal rounded text-grey-darkest  font-bold" />
-
-              <span className="flex Kanit-Black text-xl md:text-3xl text-black items-center bg-grey-lighter rounded rounded-r-none px-3 font-bold">V256 Punk(s)!</span>
-            </div>
-            <span className="flex Kanit-Black text-black items-center mt-5">max 25 per transaction</span>
-          </div>
-          <div className="flex flex-row justify-center space-x-10 mb-4">
-            {saleIsActive ?
-              <button onClick={() => freeMintPunks(1)} className="mt-4 Kanit-Black text-3xl border-6 transition duration-200 bg-yellow-500 rounded-lg hover:bg-yellow-600  text-black p-2 ">MINT 1 for FREE + gas</button>
-              : <button className="mt-4 Kanit-Black text-xl border-6 text-black transition duration-200 bg-yellow-500 rounded-lg hover:bg-yellow-600 p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>
-
-            }
-            {saleIsActive ?
-              <button onClick={() => mintPunks(how_many_rgbpunks)} className="mt-4 Kanit-Black text-3xl border-6 transition duration-200 bg-yellow-500 rounded-lg hover:bg-yellow-600  text-black p-2 ">MINT {how_many_rgbpunks} for {(tokenPrice * how_many_rgbpunks) / (10 ** 18)} ETH + gas</button>
-              : <button className="mt-4 Kanit-Black text-xl border-6 text-black transition duration-200 bg-yellow-500 rounded-lg hover:bg-yellow-600 p-2 ">SALE IS NOT ACTIVE OR NO WALLET IS CONNECTED</button>
-
-            }
-
-          </div>
-          <div className='flex flex-col items-center justify-center  w-auto'>
-            {!signedIn ? <button onClick={signIn} className="Kanit-Black inline-block  duration-200 bg-yellow-500 rounded-lg hover:bg-yellow-600  no-underline py-2 px-4 mx-4">Connect Wallet with Metamask</button>
-              :
-              <button onClick={signOut} className="Kanit-Black inline-block transition duration-200 bg-yellow-500 rounded-lg hover:bg-yellow-600 no-underline py-2 px-4 mx-4 ">Connected: {walletAddress}</button>}
-            </div>
+            <span className="flex Kanit-Black text-4xl text-black">MINT THROUGHT CONTRACT</span>
+           
+         
+          
+        </div>
         </div>
       </body>
     </html>
