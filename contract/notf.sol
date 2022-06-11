@@ -1,6 +1,3 @@
-/**
- *Submitted for verification at Etherscan.io on 2022-06-10
-*/
 
 // SPDX-License-Identifier: MIT
 
@@ -1377,7 +1374,7 @@ contract notfidenza is ERC721A, Ownable, ReentrancyGuard {
   string public _baseTokenURI;
   string public hiddenMetadataUri;
  
-  uint256 public cost = 0.0169 ether;
+  uint256 public cost = 0.015 ether;
   uint256 public maxSupply = 999;
   uint256 public maxMintAmountPerTx = 2;
  

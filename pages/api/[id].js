@@ -28,7 +28,7 @@ const  rgbApi = async(req, res) => {
   // IF YOU ARE USING INSTA REVEAL MODEL, UNCOMMENT THIS AND COMMENT THE TWO LINES BELOW
   if(parseInt(query) < totalSupply) {
   
-    let tokenName= `deleted`
+    let tokenName= `Not Fidenza`
 
     const trait = traits[parseInt(query)]
     // const trait = traits[ Math.floor(Math.random() * 8888) ] // for testing on rinkeby 
@@ -39,7 +39,7 @@ const  rgbApi = async(req, res) => {
       metadata = {
         "name": tokenName,
         "tokenId" : parseInt(query),
-        "image": `https://ipfs.io/ipfs/${trait["imageIPFS"]}`,
+        "image": `https://gateway.pinata.cloud/ipfs/${trait["imageIPFS"]}`,
         "external_url":"",
         
       }

@@ -141,7 +141,7 @@ export default function Home() {
 
         
       </head>
-      <body id="bodyy" className="flex flex-col flex-wrap items-center  min-h-screen ">
+      <body id="bodyy" className="">
 
         
 
