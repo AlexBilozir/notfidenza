@@ -137,38 +137,13 @@ export default function Home() {
 
     <html>
       <head>
-        <title>V256 Punks</title>
+        <title>Not Fidenza</title>
 
-        <meta property="og:title" content="V256 Punks" />
-        <meta property="og:description" content="Most colorful punks for your PFP!" key="ogdesc" />
-        <meta property="og:type" content="website" key="ogtype" />
-        <meta property="og:url" content="https://rgbpunks.io/" key="ogurl" />
-        <meta property="og:image" content="https://rgbpunks.io/images/600x400.png" key="ogimage" />
-        <meta property="og:site_name" content="V256 Punks" key="ogsitename" />
-
-        <meta name="twitter:card" content="summary_large_image" key="twcard" />
-        <meta property="twitter:domain" content="https://rgbpunks.io" key="twdomain" />
-        <meta property="twitter:url" content="https://rgbpunks.io/" key="twurl" />
-        <meta name="twitter:title" content="V256 Punks" key="twtitle" />
-        <meta name="twitter:description" content="Most colorful punks for your PFP!" key="twdesc" />
-        <meta name="twitter:image" content="https://rgbpunks.io/images/600x400.png" key="twimage" />
+        
       </head>
       <body id="bodyy" className="flex flex-col flex-wrap items-center  min-h-screen ">
 
-        <div id="header" className='w-full'>
-          <div className="flex flex-wrap items-center justify-center  w-auto Kanit-Black">
-            <a href="/" className="logo rgb text-center sm:text-center w-full sm:w-auto select-none">V256 PUNKS</a>
-            
-          </div>
-          <div className="flex flex-wrap items-center mt-5 justify-center   w-auto Kanit-Black">
-            <nav className="flex flex-wrap flex-row space-x-10 ml-10 justify-around Kanit-Black">
-              <a href="https://twitter.com/V256punks " className="" target="_blank"><img src="images/twitter.png" width="35" alt="" className="transform hover:scale-110" /></a>
-              <a href="https://discord.gg/62BznErEx5" className="" target="_blank"><img src="images/discord.svg" width="35" alt="" className="transform hover:scale-110" /></a>
-              <a href="#" className="" target="_blank"><img src="images/opensea.png" width="35" alt="" className="transform hover:scale-110" /></a>
-              <a href="#" className="" target="_blank"><img src="images/etherscan.png" width="35" alt="" className="transform hover:scale-110" /></a>
-            </nav>
-          </div>
-        </div>
+        
 
         <div className="w-full" id="about">
  {/* block 1 */}
