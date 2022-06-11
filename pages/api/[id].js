@@ -28,7 +28,7 @@ const  rgbApi = async(req, res) => {
   // IF YOU ARE USING INSTA REVEAL MODEL, UNCOMMENT THIS AND COMMENT THE TWO LINES BELOW
   if(parseInt(query) < totalSupply) {
   
-    let tokenName= `Not Fidenza`
+    let tokenName= `Not Fidenza #${query}`
 
     const trait = traits[parseInt(query)]
     // const trait = traits[ Math.floor(Math.random() * 8888) ] // for testing on rinkeby 
