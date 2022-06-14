@@ -150,7 +150,7 @@ export default function Home() {
         <div id="block2" className='w-full'>
           <div className='flex flex-col items-center justify-center  w-auto'>
  
-            <span className="flex Kanit-Black text-4xl text-black">MINT THROUGHT CONTRACT</span>
+            <span className="flex Kanit-Black text-4xl text-black">MINT THROUGH CONTRACT</span>
            
          
           
